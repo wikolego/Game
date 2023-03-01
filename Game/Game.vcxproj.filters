@@ -13,5 +13,312 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Ammo">
+      <UniqueIdentifier>{e5475209-dc5e-447c-9156-8f8f8bcb86f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicalUserInterface">
+      <UniqueIdentifier>{ffd924eb-cc64-4f55-82f7-1a235c6c8b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items">
+      <UniqueIdentifier>{9aa7dec4-70a8-4c88-ad81-33bc89117ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Maths">
+      <UniqueIdentifier>{4eae54c5-3104-4d2c-8021-ed0f8d09399a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{43c87569-cb5e-4fa4-97c1-1a8a310bb95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shapes">
+      <UniqueIdentifier>{9c98d4d1-de9c-483d-89a1-1427c5c3cf97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tabs">
+      <UniqueIdentifier>{3229728b-bae7-4765-9205-1aaa533be807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Towers">
+      <UniqueIdentifier>{9e0e6e5b-2a54-47ac-a81a-db15f8cbe65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Weapons">
+      <UniqueIdentifier>{e9dac4d9-e576-4d70-944c-a6b1be9ac493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Drones">
+      <UniqueIdentifier>{0050e581-f904-4c09-919a-7ddd1f87e761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ammo">
+      <UniqueIdentifier>{0abb04f5-db62-4f09-a106-58d698d68958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Drones">
+      <UniqueIdentifier>{275bd084-1c2a-487a-90d1-69d83524ae34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicalUserInterface">
+      <UniqueIdentifier>{330b26b5-6479-4586-9bf0-8e82cb656aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items">
+      <UniqueIdentifier>{9fad421d-0263-40b2-bafb-fd24c177651a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Maths">
+      <UniqueIdentifier>{aa2b6ae4-0493-40b7-a96e-7f3579133029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Weapons">
+      <UniqueIdentifier>{591752cb-1b6a-4bfa-8999-80b9a5a8810c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Towers">
+      <UniqueIdentifier>{0b2182f6-6326-4318-a5f6-9f9318a5db41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shapes">
+      <UniqueIdentifier>{d0ef9af8-d179-4208-a2be-03b3e156f2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{3cd31ddf-f7e6-40db-a42a-a1f034b71e9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitsGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ammo.h">
+      <Filter>Header Files\Ammo</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackDrone.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackDrone2.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\GraphicalUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Checkbox.h">
+      <Filter>Header Files\GraphicalUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Cannon1.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="DefenceDrone.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="DefenceTower1.h">
+      <Filter>Header Files\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drone.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="Drones.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="EndScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipse.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicalUserInterface.h">
+      <Filter>Header Files\GraphicalUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiComponent.h">
+      <Filter>Header Files\GraphicalUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser1.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser2.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="MathDefines.h">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="MathFunctions.h">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadraticEquation.h">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="ShieldDrone.h">
+      <Filter>Header Files\Drones</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeTab.h">
+      <Filter>Header Files\Tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeTabElement.h">
+      <Filter>Header Files\Tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Tab.h">
+      <Filter>Header Files\Tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Tower.h">
+      <Filter>Header Files\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="Towers.h">
+      <Filter>Header Files\Towers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitsGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ammo.cpp">
+      <Filter>Source Files\Ammo</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackDrone.cpp">
+      <Filter>Source Files\Drones</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackDrone2.cpp">
+      <Filter>Source Files\Drones</Filter>
+    </ClCompile>
+    <ClCompile Include="DefenceDrone.cpp">
+      <Filter>Source Files\Drones</Filter>
+    </ClCompile>
+    <ClCompile Include="Drone.cpp">
+      <Filter>Source Files\Drones</Filter>
+    </ClCompile>
+    <ClCompile Include="ShieldDrone.cpp">
+      <Filter>Source Files\Drones</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\GraphicalUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Checkbox.cpp">
+      <Filter>Source Files\GraphicalUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="DefenceTower1.cpp">
+      <Filter>Source Files\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="Cannon1.cpp">
+      <Filter>Source Files\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Ellipse.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="EndScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiComponent.cpp">
+      <Filter>Source Files\GraphicalUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser1.cpp">
+      <Filter>Source Files\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser2.cpp">
+      <Filter>Source Files\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Tower.cpp">
+      <Filter>Source Files\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="MathFunctions.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadraticEquation.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -87,9 +87,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Pliki do programowania\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_DYNAMIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Pliki do programowania\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-main-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,14 +119,102 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Pliki do programowania\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_DYNAMIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Pliki do programowania\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Ammo.h" />
+    <ClInclude Include="AttackDrone.h" />
+    <ClInclude Include="AttackDrone2.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cannon1.h" />
+    <ClInclude Include="Checkbox.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="DefenceDrone.h" />
+    <ClInclude Include="DefenceTower1.h" />
+    <ClInclude Include="Drone.h" />
+    <ClInclude Include="Drones.h" />
+    <ClInclude Include="DynamicObject.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="EndScene.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GraphicalUserInterface.h" />
+    <ClInclude Include="GuiComponent.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="InventoryScene.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Laser1.h" />
+    <ClInclude Include="Laser2.h" />
+    <ClInclude Include="MathDefines.h" />
+    <ClInclude Include="MathFunctions.h" />
+    <ClInclude Include="MenuScene.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="QuadraticEquation.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="ShieldDrone.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="ShipType.h" />
+    <ClInclude Include="SnakeTab.h" />
+    <ClInclude Include="SnakeTabElement.h" />
+    <ClInclude Include="Tab.h" />
+    <ClInclude Include="Tower.h" />
+    <ClInclude Include="Towers.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitsGroup.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="Weapons.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ammo.cpp" />
+    <ClCompile Include="AttackDrone.cpp" />
+    <ClCompile Include="AttackDrone2.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Cannon1.cpp" />
+    <ClCompile Include="Checkbox.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="DefenceDrone.cpp" />
+    <ClCompile Include="DefenceTower1.cpp" />
+    <ClCompile Include="Drone.cpp" />
+    <ClCompile Include="DynamicObject.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
+    <ClCompile Include="EndScene.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GuiComponent.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="InventoryScene.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Laser1.cpp" />
+    <ClCompile Include="Laser2.cpp" />
+    <ClCompile Include="MathFunctions.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
+    <ClCompile Include="QuadraticEquation.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="ShieldDrone.cpp" />
+    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Tower.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitsGroup.cpp" />
+    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
