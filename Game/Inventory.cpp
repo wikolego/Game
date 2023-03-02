@@ -2,9 +2,14 @@
 
 Inventory::Inventory()
 {
-	m_materials[Scrap] = InRange(0, 100, 10);
-	m_materials[Coopper] = InRange(0, 50, 0);
-	m_materials[Diamond] = InRange(0, 10, 0);
+	for (int i = 0; i < MaterialsCount; i++)
+		m_materials[i] = 0;
+
+	m_weight = 0;
+	m_max_weight = 100;
+
+	m_space = 0;
+	m_max_space = 100;
 }
 
 Inventory::~Inventory()
@@ -14,7 +19,7 @@ Inventory::~Inventory()
 
 bool Inventory::changeCountOf(MaterialType mat, int val)
 {
-	m_materials[mat].count += val;
+	m_materials[mat] += val;
 	return true;
 }
 
@@ -24,21 +29,23 @@ int Inventory::addItem(Item *item)
 	{
 	case ItemType::Material:
 	{
-		/*
+		//*
 		Material *mat = (Material*)item;
 		int tp = (int)mat->getMaterialType();
-		if (m_materials[tp].value >= m_materials[tp].max)
-			return 0;
-		m_materials[tp].value += mat.getCount();
-		if (m_materials[tp].value <= m_materials[tp].max)
-			return 2;
-		else
-		{
-			mat.setCount(m_materials[tp].value - m_materials[tp].max);
-			m_materials[tp].value = m_materials[tp].max;
-			return 1;
-		}
+
+		m_materials[tp] += mat->getQuantity();
+		m_weight += mat->getWeight();
+		m_space += mat->getInventorySpace();
+
+		/*
+		printf("Materials:\n");
+		for (int i = 0; i < MaterialsCount; i++)
+			printf("%d - %d\n", i, m_materials[i]);
+		printf("\n");
 		*/
+
+		return 2;
+		//*/
 
 		return 2;
 	}
@@ -49,5 +56,5 @@ int Inventory::addItem(Item *item)
 
 int Inventory::getCountOf(MaterialType mat) const
 {
-	return m_materials[mat].count;
+	return m_materials[mat];
 }

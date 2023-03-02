@@ -66,6 +66,11 @@ void test2()
 
 #define PrintSizeOf(X) printf("size of " #X " = %zd B\n", sizeof(X));
 
+ItemValues **itemValues;
+
+//#pragma startup itemValuesInit
+//#pragma exit itemValuesDelete
+
 int main()
 {
 	//printf("%f\n", TAN(60));
@@ -78,6 +83,8 @@ int main()
 	//test2();
 
 	//return 0;
+
+	itemValuesInit();
 
 	Game *game = new Game();
 
@@ -183,6 +190,8 @@ int main()
 	delete game;
 
 	delete sceneManager;
+
+	itemValuesDelete();
 
 	//system("pause");
 

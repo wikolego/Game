@@ -213,6 +213,12 @@
     <ClInclude Include="Towers.h">
       <Filter>Header Files\Towers</Filter>
     </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
@@ -319,6 +325,9 @@
     </ClCompile>
     <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\Items</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

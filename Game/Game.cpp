@@ -70,10 +70,10 @@ void Game::init()
 	ammoTab = new SnakeTab<Ammo*>();
 
 	itemTab = new SnakeTab<Item*>();
-	itemTab->add(new Item({ 600.f, 600.f }, ItemType::Material));
-	itemTab->add(new Item({ 700.f, 600.f }, ItemType::Material));
-	itemTab->add(new Item({ 600.f, 700.f }, ItemType::Material));
-	itemTab->add(new Item({ 700.f, 700.f }, ItemType::Material));
+	itemTab->add(new Material({ 600.f, 600.f }, MaterialType::Scrap));
+	itemTab->add(new Material({ 700.f, 600.f }, MaterialType::Coopper));
+	itemTab->add(new Material({ 600.f, 700.f }, MaterialType::Iron));
+	itemTab->add(new Material({ 700.f, 700.f }, MaterialType::Titan));
 
 	inventory = new Inventory();
 }
@@ -299,7 +299,7 @@ void Game::updateTowers(float time)
 
 void Game::changeItems(Unit *unit)
 {
-	itemTab->add(new Item(unit->getPosition(), ItemType::Material));
+	itemTab->add(new Material(unit->getPosition(), MaterialType::Diamond));
 }
 
 bool Game::pickUpItemTry(Position pos)
@@ -312,7 +312,7 @@ bool Game::pickUpItemTry(Position pos)
 		Item *item = elem->getContent();
 
 		float dist = pos.distance(item->getPosition());
-		if (dist < item->getMinDistance() * l)
+		if (dist < item->getPickUpRange() * l)
 		{
 			int ret = inventory->addItem(item);
 			if (ret == 2)

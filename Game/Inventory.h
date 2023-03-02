@@ -1,56 +1,17 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
 
-#include"Item.h"
-
-#define MaterialsCount 3
-
-enum MaterialType
-{
-	Scrap,
-	Coopper,
-	Diamond
-};
-
-struct InRange
-{
-	int min;
-	int max;
-	int count;
-	InRange()
-	{
-		min = 0;
-		max = 10;
-		count = 0;
-	}
-	InRange(int mn, int mx, int ct)
-	{
-		min = mn;
-		max = mx;
-		count = ct;
-	}
-	/*
-	void fixCount()
-	{
-		if (min > count)
-			count = min;
-		if (max < count)
-			count = max;
-	}
-	int getWrongCount() // func returns number, if there is too much or less of it
-	{
-		if (min > count)
-			return count - min;
-		if (max < count)
-			return count - max;
-		return 0;
-	}
-	*/
-};
+#include"Items.h"
 
 class Inventory
 {
-	InRange m_materials[MaterialsCount];
+	int m_materials[MaterialsCount];
+
+	int m_weight;
+	int m_max_weight;
+
+	int m_space;
+	int m_max_space;
 public:
 	Inventory();
 	~Inventory();

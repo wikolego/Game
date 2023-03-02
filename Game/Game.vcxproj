@@ -153,8 +153,10 @@
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="InventoryScene.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Items.h" />
     <ClInclude Include="Laser1.h" />
     <ClInclude Include="Laser2.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="MathDefines.h" />
     <ClInclude Include="MathFunctions.h" />
     <ClInclude Include="MenuScene.h" />
@@ -202,6 +204,7 @@
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Laser1.cpp" />
     <ClCompile Include="Laser2.cpp" />
+    <ClCompile Include="Material.cpp" />
     <ClCompile Include="MathFunctions.cpp" />
     <ClCompile Include="MenuScene.cpp" />
     <ClCompile Include="QuadraticEquation.cpp" />
