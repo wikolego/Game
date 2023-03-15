@@ -11,7 +11,8 @@ enum MaterialType
 	Coopper,
 	Iron,
 	Titan,
-	Diamond
+	Diamond,
+	NONE
 };
 
 class Material : public Item

@@ -11,12 +11,14 @@ extern class Camera;
 
 #define ItemsCount 3
 
+/*
 enum class ItemType
 {
 	Material,
 	Weapon,
 	Subsystem
 };
+*/
 
 struct ItemValues
 {
@@ -61,15 +63,24 @@ void itemValuesDelete();
 
 class Item : public DynamicObject
 {
+public:
+	enum Type
+	{
+		Material,
+		Weapon,
+		Subsystem,
+		NONE
+	};
+
 protected:
-	ItemType m_type;
+	Type m_item_type;
 
 	int m_quantity;
 	const ItemValues *m_item_values;
 
 public:
-	Item(Position p, ItemType type, int quantity = 1);
-	ItemType getItemType() const;
+	Item(Position p, Type type, int quantity = 1);
+	Type getItemType() const;
 	ItemValues getItemValues() const;
 	int getQuantity() const;
 	float getPickUpRange() const;

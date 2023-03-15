@@ -5,19 +5,25 @@ void itemValuesInit()
 {
 	itemValues = new ItemValues*[ItemsCount];
 
-	itemValues[0] = new ItemValues[MaterialsCount];
-	itemValues[0][Scrap] = ItemValues(15, 1, 1, 1);
-	itemValues[0][Coopper] = ItemValues(15, 1, 1, 1);
-	itemValues[0][Iron] = ItemValues(15, 1, 1, 1);
-	itemValues[0][Titan] = ItemValues(15, 1, 1, 1);
-	itemValues[0][Diamond] = ItemValues(15, 1, 1, 1);
+	itemValues[Item::Material] = new ItemValues[MaterialsCount]
+	{
+		ItemValues(15, 1, 1, 1), // Scrap
+		ItemValues(15, 1, 1, 1), // Cooper
+		ItemValues(15, 1, 1, 1), // Iron
+		ItemValues(15, 1, 1, 1), // Titan
+		ItemValues(15, 1, 1, 1) // Diamond
+	};
 
-	itemValues[1] = new ItemValues[1];
-	itemValues[1][0] = ItemValues(15, 1, 1, 1);
+	itemValues[Item::Weapon] = new ItemValues[1]
+	{
+		ItemValues(15, 1, 1, 1)
+	};
 
-	itemValues[2] = new ItemValues[1];
-	itemValues[2][0] = ItemValues(15, 1, 1, 1);
-	
+	itemValues[Item::Subsystem] = new ItemValues[SubsystemsCount]
+	{
+		ItemValues(15, 1, 1, 20),
+		ItemValues(15, 1, 1, 20)
+	};
 }
 
 void itemValuesDelete()
@@ -27,16 +33,16 @@ void itemValuesDelete()
 	delete[] itemValues;
 }
 
-Item::Item(Position p, ItemType type, int quantity)
+Item::Item(Position p, Item::Type type, int quantity)
 	: DynamicObject(p, 0)
 {
-	m_type = type;
+	m_item_type = type;
 	m_quantity = quantity;
 }
 
-ItemType Item::getItemType() const
+Item::Type Item::getItemType() const
 {
-	return m_type;
+	return m_item_type;
 }
 
 ItemValues Item::getItemValues() const

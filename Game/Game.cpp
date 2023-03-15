@@ -74,6 +74,9 @@ void Game::init()
 	itemTab->add(new Material({ 700.f, 600.f }, MaterialType::Coopper));
 	itemTab->add(new Material({ 600.f, 700.f }, MaterialType::Iron));
 	itemTab->add(new Material({ 700.f, 700.f }, MaterialType::Titan));
+	itemTab->add(new Subsystem({ 200.f, 100.f }, SubsystemType::Teleport));
+	itemTab->add(new Subsystem({ 300.f, 100.f }, SubsystemType::SlowDown));
+	itemTab->add(new Subsystem({ 350.f, 100.f }, SubsystemType::SlowDown));
 
 	inventory = new Inventory();
 }
@@ -474,13 +477,15 @@ bool Game::event(sf::Event &event, sf::Keyboard &keys, float time)
 			//pause = !pause;
 			break;
 		case sf::Keyboard::Num1:
-			slowDown = !slowDown;
+			if (inventory->contains(SubsystemType::SlowDown))
+				slowDown = !slowDown;
 			break;
 		case sf::Keyboard::Num2:
 		{
 			if (!pause)
 			{
-				mainShip->setPosition(camera->getPosFromScreen(Mouse::OnWindowPos()));
+				if (inventory->contains(SubsystemType::Teleport))
+					mainShip->setPosition(camera->getPosFromScreen(Mouse::OnWindowPos()));
 				//mouse.setPosition({1920 / 2, 1080 / 2});
 			}
 			break;
