@@ -25,6 +25,10 @@ void Game::init()
 {
 	mainShipAlive = true;
 
+	Game::slowDown = false;
+	Game::pause = false;
+	Game::mainShipControl = true;
+
 	camera = new Camera({ (float)Camera::screenWidth / 2, (float)Camera::screenHeight / 2 }, -(float)Camera::screenWidth / 2, 0, 90);
 
 	shapeTab = new Tab<Shape*>(4);
@@ -607,22 +611,20 @@ void Game::draw(sf::RenderWindow &window) const
 	for (int i = 0; i < towerTab->getSize(); i++)
 		towerTab->getElement(i)->draw(window, *camera);
 
-	Ship *ship = (*shipTab)[0];
-
 	sf::RectangleShape rect;
 
 	rect.setPosition(20, Camera::screenHeight - 90);
-	rect.setSize({ ship->getEnergyAsF() * 400, 20 });
+	rect.setSize({ mainShip->getEnergyAsF() * 400, 20 });
 	rect.setFillColor(sf::Color::Green);
 	window.draw(rect);
 
 	rect.setPosition(20, Camera::screenHeight - 60);
-	rect.setSize({ ship->getShieldAsF() * 400, 20 });
+	rect.setSize({ mainShip->getShieldAsF() * 400, 20 });
 	rect.setFillColor(sf::Color::Blue);
 	window.draw(rect);
 
 	rect.setPosition(20, Camera::screenHeight - 30);
-	rect.setSize({ ship->getArmorAsF() * 400, 20 });
+	rect.setSize({ mainShip->getArmorAsF() * 400, 20 });
 	rect.setFillColor(sf::Color::Red);
 	window.draw(rect);
 

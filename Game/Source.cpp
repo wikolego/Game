@@ -61,6 +61,19 @@ void test2()
 		inBytes(val);
 	}
 
+	vector<int> vec;
+	vec.push_back(1);
+	vec.push_back(2);
+	vec.push_back(3);
+
+	auto it = vec.begin();
+
+	begin(vec);
+
+	// vector<int>::iterator it = vec.begin();
+
+	++it;
+
 	system("pause");
 }
 
@@ -100,7 +113,7 @@ int main()
 	window.setVerticalSyncEnabled(vertical_sync);
 	//window.setMouseCursorVisible(false);
 
-	//window.setFramerateLimit(10);
+	//window.setFramerateLimit(60);
 
 	sf::Clock fps;
 	sf::Clock fps2;
@@ -119,7 +132,7 @@ int main()
 		sf::Keyboard keys;
 		float time = fps.restart().asSeconds();
 		
-		/*
+		//*
 		fpsc++;
 		if (fps2.getElapsedTime().asSeconds() >= 1.)
 		{
