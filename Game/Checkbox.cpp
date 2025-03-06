@@ -17,6 +17,16 @@ Checkbox::~Checkbox()
 	//delete m_shape;
 }
 
+void Checkbox::setChecked(bool checked)
+{
+	m_checked = checked;
+}
+
+bool Checkbox::getChecked()
+{
+	return m_checked;
+}
+
 bool Checkbox::event(sf::Event &e)
 {
 	Pos mouse_p = Mouse::OnWindowPos();

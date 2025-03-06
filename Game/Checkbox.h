@@ -10,9 +10,9 @@ public:
 	Checkbox();
 	Checkbox(Shape *shape);
 	~Checkbox();
-	void setChecked();
-	bool event(sf::Event &e);
+	void setChecked(bool checked);
 	bool getChecked();
+	bool event(sf::Event &e);
 	void draw(sf::RenderWindow &window) const;
 };
 
